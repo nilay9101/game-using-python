@@ -1,0 +1,25 @@
+import random 
+
+
+choise=["rock","paper","seccior"]
+user_input=(input("enter your choise: "))
+
+if user_input in ["1","2","3"]:
+    user_choise=choise[int(user_input)-1]
+ai_choise=random.choice(choise)
+print("your choise",user_choise)
+print("AI's choice:",ai_choise)
+if user_choise==ai_choise:
+    print("oh! no game tie")
+elif (user_choise=="rock" and ai_choise=="seccior"):
+ print("congratulation you won!")
+elif  (user_choise=="paper" and ai_choise=="rock"):
+     print("congratulation you won!")
+elif (user_choise=="seccior" and ai_choise=="paper"):
+    print("congratulation you won!")
+else:
+    print("sorry u lost")
+
+
+
+
